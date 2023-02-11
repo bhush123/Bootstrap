@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <hr>
+    <!--
+ 1) what is bootsrap ?
+Ans- Bootstrap is one of the most popular front-end frameworks which has set of predefined CSS code classes. 
+Bootstrap uses different types of classes to make responsive websites.and it is esier and faster way to 
+make responsive websites. 
+
+-It was developed in 2010 by mark otto and jacob thornton.
+-->
+
+<!--
+   2)   Bootstrap comes with three different containers:
+        
+        .container-fluid class -it has full width for any device means 100%. or it also known as full width container.
+        .container class-it has fixed width for every device. which sets a max-width at each responsive breakpoint. or it also known as fixed width container.
+        .container-{breakpoint}, which is width: 100% until the specified breakpoint.
+        
+        Default container 
+        Our default .container class is a responsive or fixed-width container, means its max-width changes at each breakpoint.
+        Note-refer container on getbootstrap for more details.
+    -->
+<!-- 
+
+3)what is media queries ?
+Ans- media queries is used to create sensible breakpoints for our layouts and interfaces.and
+ These breakpoints are mostly based on minimum viewport widths and allow us to scale up elements as the viewport or device changes.
+
+Note-viewport means total width left edge to right edge and total height top to bottom.
+
+
+     // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+    
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+    
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+    
+    // X-Large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... }
+    
+    // XX-Large devices (larger desktops, 1400px and up)
+    @media (min-width: 1400px) { ... } -->
+<!-- 
+4)Breakpoints  ?
+Ans- 
+Breakpoints are customizable widths that determine how your responsive behaves across device or viewport .
+
+Breakpoint- there are six breakpoints-:
+Extra small	 xs    None	   <576px   (No media query for `xs`)
+Small	     sm	≥576px
+Medium	     md	≥768px
+Large	     lg	≥992px
+Extra large  xl	≥1200px
+Extra extra large	xxl	≥1400px
+
+Note -refer getbootstrap. -->
+
+
+
+<div class="container-fluid border border-danger">I took full width  in  all devices</div>
+<hr><hr>
+<div class="container border border-danger">I took fixed width in all device.my width is changed as device change and i am responsive container class.</div>
+
+
+
+
+
+
+<!--   grid system is used to create 12 colomn in container.
+        
+        col-1  = 8.33%   width
+        col-2  = 16.66%  width
+        col-3  = 24.99%  width(25%)
+        col-4  = 33.33%  width
+        col-5  = 41.66%  width
+        col-6  = 49.99%  width(50%)
+        col-7  = 58.33%  width
+        col-8  = 66.66%  width
+        col-9  = 74.99%  width(75%)
+        col-10 = 83.33%  width 
+        col-11 = 91.66%  width
+        col-12 = 99.995  width(100%)
+    -->
+    
+    <!-- container-fluid class takes full widht of any device viewport -->
+    <!-- <div class="container-fluid"> 
+    <div class="row">
+        <div class="col-1 border border-dark text-center">1</div>
+        <div class="col-1 border border-dark text-center">2</div>
+        <div class="col-1 border border-dark text-center">3</div>
+        <div class="col-1 border border-dark text-center">4</div>
+        <div class="col-1 border border-dark text-center">5</div>
+        <div class="col-1 border border-dark text-center">6</div>
+        <div class="col-1 border border-dark text-center">7</div>
+        <div class="col-1 border border-dark text-center">8</div>
+        <div class="col-1 border border-dark text-center">9</div>
+        <div class="col-1 border border-dark text-center">10</div>
+        <div class="col-1 border border-dark text-center">11</div>
+        <div class="col-1 border border-dark text-center">12</div>
+    </div>
+</div>
+
+<hr class="border border-danger"> -->
+
+<!-- container class is a responsive and it has fixed width of every device or breakpoint. -->
+<!-- <div class="container"> 
+    <div class="row">
+        <div class="col-1 border border-dark text-center">1</div>
+        <div class="col-1 border border-dark text-center">2</div>
+        <div class="col-1 border border-dark text-center">3</div>
+        <div class="col-1 border border-dark text-center">4</div>
+        <div class="col-1 border border-dark text-center">5</div>
+        <div class="col-1 border border-dark text-center">6</div>
+        <div class="col-1 border border-dark text-center">7</div>
+        <div class="col-1 border border-dark text-center">8</div>
+        <div class="col-1 border border-dark text-center">9</div>
+        <div class="col-1 border border-dark text-center">10</div>
+        <div class="col-1 border border-dark text-center">11</div>
+        <div class="col-1 border border-dark text-center">12</div>
+    </div>
+</div>
+<hr class="border border-danger"> -->
+
+<!-- container-breakpoint class takes full width of viewport until the specified breakpoint or device. and for remaining breakpoints  it will apply default container class means fixed width.  -->
+
+<!-- <div class="container-sm">100% wide until small breakpoint</div>
+<div class="container-md">100% wide until medium breakpoint</div>
+<div class="container-lg">100% wide until large breakpoint</div>
+<div class="container-xl">100% wide until extra large breakpoint</div>
+<div class="container-xxl">100% wide until extra extra large breakpoint</div>
+
+<hr class="border border-danger"> -->
+
+<!-- 
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-2 border border-danger ">hello-1</div>
+        <div class="col-2 border border-danger ">hello-2</div>
+        <div class="col-2 border border-danger ">hello-3</div>
+        <div class="col-2 border border-danger ">hello-4</div>
+        <div class="col-2 border border-danger ">hello-5</div>
+        <div class="col-2 border border-danger ">hello-6</div>
+    </div>
+</div>
+
+<hr class="border border-danger">
+ -->
+<!--row class has display:flex and flex-wrap property -->
+<!-- <div class="container-fluid">
+    <div class="row">   
+        <div class="col-3 border border-dark">My width is  25% </div>
+        <div class="col-9 border border-dark">My width is 75%</div>
+    </div>
+</div>
+
+<hr class="border border-danger"> -->
+
+<!-- if colomn count cross the col-12 then element comes to the next line. because all col number addition should be 12 if we want element in single line -->
+
+<!-- <div class="container-fluid">
+    <div class="row">   
+        <div class="col-5 border border-dark">I took width of 5 col</div>
+        <div class="col-7 border border-dark">I took width of 7 col</div>
+    </div>
+</div>
+
+<hr class="border border-danger"> -->
+
+<!-- 
+<div class="container-fluid">
+    <div class="row">   
+        <div class="col-9 border border-dark"> I took width of 9 col</div>
+        <div class="col-5 border border-dark">I took width of 5 col</div>
+    </div>
+</div>
+
+<hr class="border border-danger"> -->
+
+<!-- <div class="container-fluid">
+    <div class="row">   
+        <div class="col-9 border border-dark"> I took width of 9 col (75%)</div>
+        <div class="col-3 border border-dark"> I took width of 3 col (25%)</div>
+        <div class="col-5 border border-dark">I took width of 5 col</div>
+        <div class="col-3 border border-dark">I took width of 3 col</div>
+        <div class="col-2 border border-dark">I took width of 2 col</div>
+        <div class="col-1 border border-dark">1 co.</div>
+        <div class="col-1 border border-dark">1 co.</div>
+        <div class="col-10 border border-dark">I took width of 10 col</div>
+        <div class="col-12 border border-dark">I took width of 12 col (100%)</div>
+        <div class="col-6 border border-dark">I took width of 6 col (50%)</div>
+        <div class="col-6 border border-dark">I took width of 6 col (50%)</div>
+   </div>
+</div>
+
+<hr class="border border-danger"> -->
+
+
+<!-- <div class="container"> 
+    <div class="row">
+        <div class="col-1 border border-dark text-center">1</div>
+        <div class="col-1 border border-dark text-center">2</div>
+        <div class="col-1 border border-dark text-center">3</div>
+        <div class="col-1 border border-dark text-center">4</div>
+        <div class="col-1 border border-dark text-center">5</div>
+        <div class="col-1 border border-dark text-center">6</div>
+        <div class="col-1 border border-dark text-center">7</div>
+        <div class="col-1 border border-dark text-center">8</div>
+        <div class="col-1 border border-dark text-center">9</div>
+        <div class="col-1 border border-dark text-center">10</div>
+        <div class="col-1 border border-dark text-center">11</div>
+        <div class="col-1 border border-dark text-center">12</div>
+        <div class="col-1 border border-dark text-center">13</div>
+        <div class="col-1 border border-dark text-center">14</div>
+        <div class="col-1 border border-dark text-center">15</div>
+        <div class="col-1 border border-dark text-center">16</div>
+        <div class="col-1 border border-dark text-center">17</div>
+        </div>
+</div>
+<hr class="border border-danger"> -->
+
+
+<!-- for equal parts use col class -->
+
+<!-- <div class="container-fluid">
+    <div class="row">
+        <div class="col border border-dark">bhushan</div>
+        <div class="col border border-dark">bhushan</div>
+        <div class="col border border-dark">bhushan</div>
+        <div class="col border border-dark">bhushan</div>
+    </div>
+</div>
+
+<hr class="border border-danger"> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

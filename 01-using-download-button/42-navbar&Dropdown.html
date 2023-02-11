@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <title>Navbar</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,a{
+            margin: 0;
+            text-decoration: none;
+        }
+        li ul .bg-overCustom:hover{
+            background-color: rgb(40, 39, 39);
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<section>
+  <div class="d-flex justify-content-between bg-black align-items-center py-3 mt-4">
+   
+      <div class="col-lg-2 text-end">
+         <a href="#" class="fs-3 text-white fw-bolder">Fundly</a>
+      </div>
+
+      <div class="col-lg-4 d-flex justify-content-center">
+         <ul class="list-unstyled d-flex  ">
+             <li class="pe-4"><a href="#" class=" text-decoration-none text-white">Home</a></li>
+             <li class="pe-4"><a href="#" class=" text-decoration-none text-white">About</a></li>
+             <li class="dropdown pe-4">
+                 <a href="#" class="dropdown-toggle  text-decoration-none text-white" data-bs-toggle="dropdown">Services</a>
+                 <ul class="list-unstyled dropdown-menu">
+                     <li class="dropdown-item  bg-overCustom"><a href="#" class="text-black a-item">link-1</a></li>
+                     <li class="dropdown-item  bg-overCustom"><a href="#" class="text-black a-item">link-2</a></li>
+                     <li class="dropdown-item  bg-overCustom"><a href="#" class="text-black a-item">link-3</a></li>
+                     <li class="dropdown-item  bg-overCustom"><a href="#" class="text-black a-item">link-4</a></li>
+                 </ul>
+             </li>
+             <li class="pe-4"><a href="#" class=" text-decoration-none text-white">Team</a></li>
+             <li class="pe-4"><a href="#" class=" text-decoration-none text-white">Contact</a></li>
+         </ul>
+      </div>
+
+        <div class="col-lg-2">
+         <button type="button" class="btn btn-danger text-white">Suscribe</button>
+        </div>
+  </div>
+</section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+
+    <style>
+        .forms{
+            color: burlywood;
+        }
+        .input-custmize-border{
+            border: 1px solid #414040;
+        }
+        
+        @media (min-width:768px){
+            
+            .body{
+                background-color: burlywood;
+            }
+        }
+
+    </style>
+</head>
+<body class="body pt-lg-5">
+    
+   <div class="container border border-dark border-2 border-opacity-25 p-3 mt-md-5 bg-dark">
+    <form class="row g-2">
+       <div class="col-12 text-center">
+          <h2 class="fw-bolder pb-5 forms text-uppercase  user-select-none">resistration form</h2>
+       </div>
+
+        <div class="col-12 col-md-4">
+            <input class="form-control rounded-0 bg-transparent input-custmize-border text-white" type="text"  placeholder="First Name" required> 
+        </div>
+
+        <div class="col-12 col-md-4">
+            <input class="form-control rounded-0 bg-transparent input-custmize-border text-white" type="text"  placeholder="Middle Name" required> 
+        </div>
+        
+        <div class="col-12 col-md-4">
+            <input class="form-control rounded-0 bg-transparent input-custmize-border text-white" type="text"  placeholder="Last Name" required> 
+        </div>
+
+        <div class="col-12 col-md-4">
+            <input class="form-control rounded-0 bg-transparent input-custmize-border text-white" type="file">
+        </div>
+
+        <div class="col-12 col-md-2">
+            <!-- <input class="form-control" type="text" placeholder="City"> -->
+             <select class="form-select rounded-0 bg-transparent input-custmize-border text-white">
+                <option value=""  class="text-muted">Select Your City</option>
+                <option value="" class="bg-dark">Pune</option>
+                <option value="" class="bg-dark">Mumbai</option>
+                <option value="" class="bg-dark">Aurangabad</option>
+                <option value="" class="bg-dark">Akola</option>
+                <option value="" class="bg-dark">Amaravati</option>
+             </select>
+        </div>
+        
+        <div class="col-12 col-md-2">
+            <input class="form-control rounded-0 bg-transparent input-custmize-border text-white" type="text"  placeholder="Pin Code"> 
+        </div>
+
+        <div class="col-12 col-md-4">
+            <input class="form-control rounded-0 bg-transparent input-custmize-border text-white" type="text"  placeholder="State"> 
+        </div>
+
+        <div class="col-12 col-md-3">
+         <input class="form-control rounded-0 bg-transparent input-custmize-border text-white" type="email"  placeholder="Email" required>
+       </div>
+       
+       <div class="col-12 col-md-3">
+           <input class="form-control rounded-0 bg-transparent input-custmize-border text-white" type="text"  placeholder="Mobile No." required>
+        </div>
+        
+        <div class="col-12 col-md-6">
+             <input class="form-control rounded-0 bg-transparent input-custmize-border text-white" type="text"  placeholder="Address">
+        </div>
+
+        <div class="col-12">
+            <textarea  class="col-12 ps-2 text-muted bg-transparent input-custmize-border text-white" cols="30" rows="7" placeholder="Message"></textarea>
+        </div>
+
+        <div class="col-12">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input bg-transparent input-custmize-border text-white">
+                <label class="text-muted user-select-none ">All Above Information is true.</label>
+            </div>
+        </div>
+        <div class="text-center text-md-start"> 
+            <button type="button" class="btn btn-2 text-muted btn-outline-info">Submit</button>
+        </div>   
+    </form>
+   </div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

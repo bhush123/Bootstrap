@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Note-refer bootsratp wesite for more details. -->
+
+
+    <div class="container border border-danger p-4">
+
+        <button type="button" class=" position-relative btn  btn-primary text-white  border-0 rounded-1">mails <span class="rounded-pill translate-middle badge bg-danger text-dark position-absolute top-0 start-100">+99</span></button>
+        <button type="button" class=" position-relative btn  btn-info text-white  border-0 rounded-1  ms-4">Alert <span class="rounded-circle translate-middle badge bg-danger position-absolute top-0 start-100 p-2"><span></span></span></button>
+        
+          
+    </div>
+
+    <!-- relative - for parent element because child does not move outside of parent. 
+     absolute for child element  for movement inside only parent.
+-->
+    <div class="position-relative m-4">
+        <div class="progress" style="height: 1px;">
+          <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+        <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+        <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+      </div>
+      
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--
+        gutters classses is used to apply padding horizantally beetween two colomns(gap or space between colomns).
+        .gx class represent horzantal padding of left and right side.
+        .gy class represent margin of top of row. 
+ 
+        we can set gutter classes according to all devices.
+        gutters classes have value from 0 to 5.
+
+        every container has default padding 12px from left side and 12px from right side.
+        
+        0) 0 padding              (from left side and from right side)
+        1) 0.25rem = 4px   (2px from left side and 2px from right side)
+        2) 0.5rem  = 8px   (4px from left side and 4px from right side)
+        3) 1rem    = 16px  (8px from left side and 8px from right side)       
+        4) 1.5rem  = 24px   (12px from left side and 12px from right side) 1.5 rem is a default padding for every container.
+        5) 3rem    = 48px
+
+        $spacer = 1rem = 16px
+      -->
+<!-- 
+      gx-padding left and right.
+      gy-margin top between row.
+      g- short hand of top margin beetween row . -->
+
+<!--it will apply to all devices-->
+
+<div class="container">
+    <div class="row  g-4 text-danger border border-danger"> 
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+    </div>
+    </div>
+
+
+      
+    <!-- <div class="container border border-dark">
+        <div class="row gx-2"> 
+            <div class="col border border-danger">Bhusahn</div>
+            <div class="col border border-danger">Bhusahn</div>
+        </div>
+      </div>
+
+      <hr><hr> -->
+      
+      <!-- <div class="container border border-dark">
+        <div class="row gy-4"> 
+            <div class="col border border-danger">Bhusahn</div>
+            <div class="col border border-danger">Bhusahn</div>
+        </div>
+      </div> -->
+
+<hr><hr>
+      <!-- we can set padding according devices -->
+
+       <!-- <div class="container">
+        <div class="row gx-lg-5  gx-md-2 gx-sm-0">
+            <div class="col-lg-6 col-md-6 col-sm-12 border border-dark">Bhushan</div>
+            <div class="col-lg-6 col-md-6 col-sm-12 border border-dark">Bhushan</div>
+        </div>
+       </div> -->
+
+
+<!-- 
+         <div class="container">
+        <div class="row gy-lg-5  gy-md-3 gy-sm-1">
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark">Bhushan</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark">Bhushan</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark">Bhushan</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark">Bhushan</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark">Bhushan</div>
+        </div>
+        </div>
+       -->
+
+       <hr>
+
+       <!-- short hand g-0 , g-2.....g-5 these are topm row margin to all device. -->
+       <!-- p-0 to p-6  these are colomn padding -->
+<!--       
+       <div class="container">
+        <div class="row g-2 p-5 text-center text-danger border border-danger"> 
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark g-4 p-3">Bhushan</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark g-4 p-3">Bhushan</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark g-4 p-3">Bhushan</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark g-4 p-3">Bhushan</div>
+            <div class="col-lg-6 col-md-6 col-sm-6 border border-dark g-4 p-3">Bhushan</div>
+        </div>
+        </div>
+
+<hr> -->
+<!-- 
+<div class="container">
+    <div class="row g-lg-5 text-center text-danger border border-danger"> 
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark ">Bhushan</div>
+    </div>
+    </div>
+ -->
+
+      <!-- 
+        px-left and right padding 
+        py-top and bottom padding
+        p - short hant for all side .
+
+        we can set padding according to all devices.
+       -->
+<!--  
+<div class="container">
+    <div class="row text-danger border border-danger"> 
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark gy-lg-5 gy-md-2 gy-sm-1 px-lg-5 p-md-4 py-sm-5">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark gy-lg-5 gy-md-2 gy-sm-1 px-lg-5 p-md-4 py-sm-5">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark gy-lg-5 gy-md-2 gy-sm-1 px-lg-5 p-md-4 py-sm-5">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark gy-lg-5 gy-md-2 gy-sm-1 px-lg-5 p-md-4 py-sm-5">Bhushan</div>
+        <div class="col-lg-6 col-md-6 col-sm-6 border border-dark gy-lg-5 gy-md-2 gy-sm-1 px-lg-5 p-md-4 py-sm-5">Bhushan</div>
+    </div>
+    </div>
+ -->
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
